@@ -9,6 +9,11 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+import sys
+from os import path
+
+sys.path.append(path.dirname(path.abspath(__file__)))
+
 BOT_NAME = 'dataset'
 
 SPIDER_MODULES = ['dataset.spiders']
